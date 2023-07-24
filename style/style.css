@@ -1,0 +1,109 @@
+.example::-webkit-scrollbar{
+    display: none;
+}
+.banner{
+    height: 80vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.841), rgba(0, 0, 0, 0.821)), url('../image/bgutama.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    width: 100%;
+    height: 200px;
+    color: white;
+    margin:0 auto;
+    position: relative;
+    top: 150px;
+}
+.header h1{
+    font-size: 150px;
+    display: inline-block;
+    margin: 0;
+}
+.header h2{
+    margin: 0 0 0 300px;
+    letter-spacing: 10px;
+}
+.contain{
+    background-color: rgba(118, 125, 125, 0.786);
+    height: 100px;
+}
+.contain h1{
+    position: relative;
+    top: 25%;
+    letter-spacing: 10px;
+    margin: 0;
+}
+.coloum{
+    float: left;
+    width: 25%;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.menu::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.menu .coloum{
+    font-family: Verdana;
+}
+.menu .coloum h1{
+    font-size: 30px;
+    font-family: Verdana;
+}
+
+#merah{
+    background-image: linear-gradient(30deg, #ff0000 0, #ff0000 50%, #ff0000 100%);
+}
+#hijau{
+    background-image: radial-gradient(circle at -4.17% 95.45%, #74ff00 0, #52ff00 25%, #06ff00 50%, #00f808 75%, #00f114 100%);
+}
+#biru{
+    background-image: radial-gradient(circle at 50% -20.71%, #7043f3 0, #3c3cf2 50%, #0037f1 100%);
+    color: white;
+}
+.btnboking{
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+.btnboking button{
+    animation: shake 2s infinite;
+}
+.btn_batal{
+    text-align: right;
+}
+
+@keyframes shake{
+    10%{transform: scale(1.05) rotate(5deg);}
+    20%{transform: scale(1.05) rotate(-5deg);}
+    30%{transform: scale(1.05) rotate(5deg);}
+    40%{transform: none;}
+}
+/* responsif */
+@media screen and (max-width : 1210px){
+    .coloum{
+        width: 50%;
+    }
+    .btnboking{
+        top: 50px;
+    }
+}
+@media screen and (max-width :700px){
+    .coloum{
+        width: 100%;
+    }
+    .header h1{
+        font-size: 100px;
+    }
+    .header h2{
+        margin: 0;
+    }
+}
